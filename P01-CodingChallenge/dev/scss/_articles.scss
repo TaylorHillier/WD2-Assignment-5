@@ -1,0 +1,59 @@
+@use "typography" as *;
+
+
+.main-dish {
+    position: relative;
+    h2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        margin: 0 0 4px 0;
+        background-color: black;
+        font-family: $roboto-condensed;
+        font-size: clamp(1.2rem, 0.3273rem + 4.3636vw, 1.8rem);
+        padding: 0.6rem;
+        font-weight: 400;
+        opacity: 0.75;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.read-more {
+    background-color: lightblue;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    h2 {
+        margin: 0;
+        font-family: $roboto-condensed;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+    p {
+        font-family: $roboto-condensed;
+    }
+    .posted-by {
+        margin-top: 0;
+    }
+    img {
+        width: 100%;
+    }
+    .read-more-btn {
+        background-color: cornflowerblue;
+        padding: 0.4rem;
+        width: fit-content;
+        font-family: $roboto-condensed;
+        font-weight: bold;
+        color: white;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+#older-post {
+    margin: 2rem 0 ;
+}
+
