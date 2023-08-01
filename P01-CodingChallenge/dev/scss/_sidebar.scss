@@ -1,0 +1,55 @@
+@use "typography" as *;
+@use "variables" as *;
+@use "mixins" as *;
+.sidebar {
+  padding: 1px;
+}
+// Target the section.latest-recipes and set it as a flex container
+.latest-recipes {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @include sidebar-h2-style;
+  }
+
+  .latest-recipes-items {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    padding: 10px;
+
+    img {
+      border: 2px solid $darkblue;
+      border-right-width: 1px;
+      border-left-width: 1px;
+    }
+
+    &:nth-child(even) {
+      background-color: $white;
+    }
+    &:nth-child(odd) {
+      background-color: $lightgray;
+    }
+  }
+}
+
+.cuisines {
+  h2 {
+    @include sidebar-h2-style;
+  }
+  .cuisine-list {
+    flex-grow: 1; /* Allow the list to grow and fit available space */
+    display: flex;
+    flex-wrap: wrap; /* Items wrap to next row when needed */
+    background-color: $white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 4px 8px; /* Adjust the margins as per your preference */
+      white-space: nowrap; /* Prevent list items from breaking into multiple lines */
+      min-width: 120px; /* Set a minimum width for each list item to prevent excessive wrapping */
+    }
+  }
+}
