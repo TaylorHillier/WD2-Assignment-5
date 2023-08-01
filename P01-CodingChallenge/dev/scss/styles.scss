@@ -3,3 +3,8 @@
 $darkblue: #0077c0;
 $lightblue: #4B9cd3;
 $default-font: 'Roboto Condensed', sans-serif;
+
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
