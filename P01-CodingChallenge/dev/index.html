@@ -23,7 +23,8 @@
     />
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-    <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
+    <!-- <link rel="stylesheet" href="styles/styles.css?cachebuster=1" /> -->
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -39,7 +40,7 @@
         </a>
       </div>
       <!--search box-->
-      <div class="serach-box" id="search-box">
+      <div class="search-box" id="search-box">
         <input
           type="textbox"
           id="search-text"
@@ -84,15 +85,21 @@
           <source media="(max-width: 1000px)" srcset="images/mussel.jpg" />
           <img src="images/mussel.jpg" alt="Responsive mussel picture" />
         </picture>
-        <h2>Lorem ipsum dolor sit</h2>
+        <div class="dish-content">
+          <h2>Lorem ipsum dolor sit</h2>
+        </div>
       </section>
       <section class="main-dish" id="main-dish-two">
         <img src="images/salad.jpg" alt="A picture of salad" />
-        <h2>Lorem, ipsum dolor</h2>
+        <div class="dish-content">
+          <h2>Lorem, ipsum dolor</h2>
+        </div>
       </section>
       <section class="main-dish" id="main-dish-three">
         <img src="images/pancake.jpg" alt="A picture of pancake" />
-        <h2>sit amet consectetur</h2>
+        <div class="dish-content">
+          <h2>sit amet consectetur</h2>
+        </div>
       </section>
     </div>
     <section class="latest-recipes" id="latest-recipes">
