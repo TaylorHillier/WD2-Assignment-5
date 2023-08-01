@@ -1,4 +1,22 @@
 // Place your Sass imports here...
+@use 'nav';
+@use 'sidebar';
+@use 'footer';
 @use 'articles';
 @use 'typography';
-@use 'footer';
+
+
+$darkblue: #0077c0;
+$lightblue: #4B9cd3;
+
+@media(min-width: 50em) {
+    .main-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
