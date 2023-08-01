@@ -1,5 +1,9 @@
 @use "typography" as *;
-
+@use "variables" as *;
+body {
+    background-image: url("../images/bg.jpg");
+    font-size: clamp(1rem, 0.8636rem + 0.6818vw, 1.3rem);
+}
 
 .main-dish {
     position: relative;
@@ -9,10 +13,10 @@
         left: 0;
         right: 0;
         color: white;
-        margin: 0 0 4px 0;
+        margin: 0 0 5px 0;
         background-color: black;
-        font-family: $roboto-condensed;
-        font-size: clamp(1.2rem, 0.3273rem + 4.3636vw, 1.8rem);
+        font-family: $default-font;
+        font-size: clamp(1.2rem, 0.8364rem + 1.8182vw, 2rem);
         padding: 0.6rem;
         font-weight: 400;
         opacity: 0.75;
@@ -23,17 +27,18 @@
 }
 
 .read-more {
-    background-color: lightblue;
+    background-color: white;
     padding: 0.6rem;
     margin-bottom: 0.5rem;
     h2 {
         margin: 0;
-        font-family: $roboto-condensed;
+        font-family: $default-font;
         font-weight: 400;
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 1.3600rem + 2.2000vw, 4rem);
+        color: $darkblue;
     }
     p {
-        font-family: $roboto-condensed;
+        font-family: $default-font;
     }
     .posted-by {
         margin-top: 0;
@@ -42,14 +47,15 @@
         width: 100%;
     }
     .read-more-btn {
-        background-color: cornflowerblue;
+        background-color: $darkblue;
         padding: 0.4rem;
         width: fit-content;
-        font-family: $roboto-condensed;
+        font-family: $default-font;
         font-weight: bold;
         color: white;
         margin-right: 0;
         margin-left: auto;
+        font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
     }
 }
 

@@ -1,0 +1,18 @@
+@use "mixins" as *;
+@include media("tablet") {
+    .main-dish {
+        img {
+            object-fit: cover;
+            height: clamp(240px, 68.3643px + 35.3160vw, 430px);
+        }
+    }
+    .read-more {
+        margin-bottom: 1rem;
+        .posted-by {
+            margin-bottom: 50px;
+        }
+        .read-more-btn {
+            padding: 0.6rem;
+        }
+    }
+}
