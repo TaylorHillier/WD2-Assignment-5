@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+
+    .hamburger-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
