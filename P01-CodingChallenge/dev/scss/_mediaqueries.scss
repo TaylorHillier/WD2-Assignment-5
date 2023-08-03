@@ -1,5 +1,38 @@
 @use "mixins" as *;
-@include media("tablet") {
+
+@include media("desktop") {
+    
+}
+
+@include media("tablet-large") {
+    .main-dish-container {
+        display: grid;
+        grid-template-areas: 
+        "one one"  
+        "two three";
+        gap: 5px;
+        margin: 10px 0;
+    }
+    .main-dish {
+        h2 {
+            margin: 0;
+        }
+    }
+    #main-dish-one {
+        grid-area: one;
+    }
+    #main-dish-two {
+        grid-area: two;
+    }
+    #main-dish-three {
+        grid-area: three;
+    }
+    .read-more {
+        margin-bottom: 15px;
+    }
+}
+
+@include media("tablet-small") {
     .main-dish {
         img {
             object-fit: cover;
@@ -16,3 +49,4 @@
         }
     }
 }
+

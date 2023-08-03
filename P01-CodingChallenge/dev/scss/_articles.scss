@@ -29,7 +29,7 @@ body {
 .read-more {
     background-color: white;
     padding: 0.6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     h2 {
         margin: 0;
         font-family: $default-font;
@@ -52,10 +52,13 @@ body {
         width: fit-content;
         font-family: $default-font;
         font-weight: bold;
-        color: white;
         margin-right: 0;
         margin-left: auto;
         font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 }
 
