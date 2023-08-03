@@ -1,4 +1,8 @@
 // Write your JavaScript here...
-$('.hamburgerMenu').on('click', function () {
-    $('#openBurgerMenu').toggleClass("hidden");
-})
+$(document).ready(function () {
+    $('.hamburgerMenu').on('click', function () {
+        $('#openBurgerMenu').toggleClass("hidden");
+        console.log("clicked");
+    });
+
+});
