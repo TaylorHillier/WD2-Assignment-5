@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "typography" as *;
 
 @mixin media($breakpoint) {
   @if $breakpoint == desktop {
@@ -6,7 +7,7 @@
       @content;
     }
   }
-  
+
   @if $breakpoint == tablet-large {
     @media only screen and (min-width: 670px) {
       @content;
@@ -21,6 +22,7 @@
 }
 
 @mixin sidebar-h2-style {
+  font-family: $default-font;
   background-color: $darkblue;
   color: $white;
   padding: 13px;
