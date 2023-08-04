@@ -17,6 +17,31 @@
     }
     .sidebar {
       grid-row-end: span 3;
+      margin: 7px 0;
+      .latest-recipes {
+        h2 {
+          font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
+        }
+        .latest-recipes-items {
+          img {
+            height: 100%;
+          }
+          h3 {
+            font-size: clamp(0.7rem, 0.8364rem + 0.6818vw, 1.7rem);
+            margin: 7px;
+          }
+        }
+      }
+    }
+    .cuisines {
+      h2 {
+        font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
+      }
+      .cuisines-list {
+        li {
+          font-size: clamp(0.5rem, 0.7364rem + 1.7182vw, 1.1rem);
+        }
+      }
     }
     .read-more {
       padding: 1.5rem 2rem;
