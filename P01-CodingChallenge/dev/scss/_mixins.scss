@@ -3,19 +3,19 @@
 
 @mixin media($breakpoint) {
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 800px) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-large {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 670px) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-small {
-    @media only screen and (min-width: 600px) and (max-width: 768px) {
+    @media only screen and (min-width: 400px) and (max-width: 670px) {
       @content;
     }
   }
