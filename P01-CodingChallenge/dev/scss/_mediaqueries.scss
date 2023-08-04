@@ -84,6 +84,9 @@
     padding: 1rem;
   }
 }
+.cuisine-list {
+  @include cuisine-list-style;
+}
 
 @include media("tablet-small") {
   .main-dish {
@@ -100,5 +103,8 @@
     .read-more-btn {
       padding: 0.6rem;
     }
+  }
+  .cuisine-list {
+    @include cuisine-list-style;
   }
 }
