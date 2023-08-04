@@ -1,17 +1,14 @@
 // Place your Sass imports here...
-@use 'nav';
-@use 'sidebar';
-@use 'articles';
-@use 'footer';
-@use 'typography';
-@use 'mediaqueries';
+@use "variables";
+@use "mixins";
+@use "typography";
+@use "nav";
+@use "sidebar";
+@use "articles";
+@use "footer";
 
-
-
-
-
+@use "mediaqueries";
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
