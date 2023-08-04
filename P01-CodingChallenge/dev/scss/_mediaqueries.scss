@@ -8,6 +8,7 @@
         margin: 5px 120px;
         .main-dish-container {
             grid-column: 1/4;
+            gap: 7px;
         }
         .read-more {
             grid-column-end: span 3;
