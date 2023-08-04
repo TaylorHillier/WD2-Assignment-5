@@ -1,70 +1,70 @@
 @use "mixins" as *;
 
 @include media("desktop") {
-    .main-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) 400px;
-        gap: 5px;
-        margin: 5px 120px;
-        .main-dish-container {
-            grid-column: 1/4;
-            gap: 7px;
-        }
-        .read-more {
-            grid-column-end: span 3;
-            padding: 1.5rem 2rem;
-        }
+  .main-content {
+    display: grid;
+    grid-template-columns: clamp(530px, 51.4286px + 59.8214vw, 1200px) 250px;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 120px;
+    .main-dish-container {
+      grid-column: 1/4;
+      gap: 7px;
     }
-    #older-post {
-        grid-column-end: span 2;
+    .read-more {
+      grid-column-end: span 3;
+      padding: 1.5rem 2rem;
     }
+  }
+  #older-post {
+    grid-column-end: span 2;
+  }
 }
 
 @include media("tablet-large") {
-    .main-dish-container {
-        display: grid;
-        grid-template-areas: 
-        "one one"  
-        "two three";
-        gap: 5px;
-        margin: 10px 0;
+  .main-dish-container {
+    display: grid;
+    grid-template-areas:
+      "one one"
+      "two three";
+    gap: 5px;
+    margin: 10px 0;
+  }
+  .main-dish {
+    margin: 0;
+    h2 {
+      bottom: 0;
     }
-    .main-dish {
-        margin: 0;
-        h2 {
-            bottom: 0;
-        }
-    }
-    #main-dish-one {
-        grid-area: one;
-    }
-    #main-dish-two {
-        grid-area: two;
-    }
-    #main-dish-three {
-        grid-area: three;
-    }
-    .read-more {
-        margin-bottom: 15px;
-        padding: 1rem;
-    }
+  }
+  #main-dish-one {
+    grid-area: one;
+  }
+  #main-dish-two {
+    grid-area: two;
+  }
+  #main-dish-three {
+    grid-area: three;
+  }
+  .read-more {
+    margin-bottom: 15px;
+    padding: 1rem;
+  }
 }
 
 @include media("tablet-small") {
-    .main-dish {
-        img {
-            object-fit: cover;
-            height: clamp(240px, 68.3643px + 35.3160vw, 430px);
-        }
+  .main-dish {
+    img {
+      object-fit: cover;
+      height: clamp(240px, 68.3643px + 35.316vw, 430px);
     }
-    .read-more {
-        margin-bottom: 1rem;
-        .posted-by {
-            margin-bottom: 50px;
-        }
-        .read-more-btn {
-            padding: 0.6rem;
-        }
+  }
+  .read-more {
+    margin-bottom: 1rem;
+    .posted-by {
+      margin-bottom: 50px;
     }
+    .read-more-btn {
+      padding: 0.6rem;
+    }
+  }
 }
-
