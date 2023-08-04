@@ -54,6 +54,7 @@
     padding: 11px 3px;
     line-height: 1.4rem;
     margin: 0;
+    column-gap: 20px;
     li {
       font-family: $default-font;
       font-size: clamp(0.8rem, 0.7364rem + 1.7182vw, 1.5rem);
