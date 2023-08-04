@@ -20,7 +20,7 @@
     gap: 7px;
     padding: 10px;
     h3 {
-      font-family: $font-family;
+      font-family: $default-font;
       font-size: clamp(0.5rem, 0.8364rem + 1.8182vw, 2rem);
       font-weight: 400;
     }
@@ -55,7 +55,7 @@
     line-height: 1.4rem;
     margin: 0;
     li {
-      font-family: $font-family;
+      font-family: $default-font;
       font-size: clamp(0.8rem, 0.7364rem + 1.7182vw, 1.5rem);
       font-weight: 400;
       margin: 4px 8px; /* Adjust the margins as per your preference */
