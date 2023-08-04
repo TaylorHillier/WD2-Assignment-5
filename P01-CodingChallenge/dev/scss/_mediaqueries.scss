@@ -1,7 +1,22 @@
 @use "mixins" as *;
 
 @include media("desktop") {
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 400px;
+        gap: 5px;
+        margin: 5px 150px;
+        .main-dish-container {
+            grid-column: 1/4;
+        }
+        .read-more {
+            grid-column-end: span 3;
+        }
+    }
     
+    #older-post {
+        grid-column-end: span 2;
+    }
 }
 
 @include media("tablet-large") {
@@ -14,8 +29,9 @@
         margin: 10px 0;
     }
     .main-dish {
+        margin: 0;
         h2 {
-            margin: 0;
+            bottom: 0;
         }
     }
     #main-dish-one {
