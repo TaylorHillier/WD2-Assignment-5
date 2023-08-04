@@ -5,15 +5,16 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr) 400px;
         gap: 5px;
-        margin: 5px 150px;
+        margin: 5px 120px;
         .main-dish-container {
             grid-column: 1/4;
+            gap: 7px;
         }
         .read-more {
             grid-column-end: span 3;
+            padding: 1.5rem 2rem;
         }
     }
-    
     #older-post {
         grid-column-end: span 2;
     }
@@ -45,6 +46,7 @@
     }
     .read-more {
         margin-bottom: 15px;
+        padding: 1rem;
     }
 }
 
