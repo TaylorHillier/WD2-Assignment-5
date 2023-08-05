@@ -1,39 +1,48 @@
 @use "./mixins" as *;
 
 @include media("desktop") {
+    .navbar {
+        width: clamp(50rem, 19.2857rem + 61.4286vw, 93rem);
+    }
+    
     .main-content {
         display: grid;
-        grid-template-columns: clamp(530px, 51.4286px + 59.8214vw, 1200px) 250px;
+        grid-template-columns: clamp(500px, 51.4286px + 59.8214vw, 1200px) clamp(240px, 225.7143px + 1.7857vw, 260px);
         justify-content: center;
-        gap: 5px;
+        gap: 5px 15px;
 
         .main-dish-container {
-            gap: 7px;
-            align-self: start;
+            gap:  2px 7px;
+            grid-auto-rows: min-content;
+            height: fit-content;
         }
 
         .main-dish {
+            height: fit-content;
             img {
                 height: auto;
+            }
+            h2 {
+                font-size: clamp(1rem, 0.4286rem + 1.1429vw, 1.8rem);
+                margin-bottom: 5px;
             }
         }
 
         .sidebar {
-            grid-row-end: span 3;
+            grid-row-end: span 4;
             margin: 7px 0;
+            h2 {
+                font-size: clamp(1.3rem, 1.0857rem + 0.4286vw, 1.6rem);
+            }
 
             .latest-recipes {
-                h2 {
-                    font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
-                }
-
                 .latest-recipes-items {
                     img {
                         height: 100%;
                     }
 
                     h3 {
-                        font-size: clamp(0.7rem, 0.8364rem + 0.6818vw, 1.7rem);
+                        font-size: clamp(0.7rem, 0.8364rem + 0.6818vw, 1.5rem);
                         margin: 7px;
                     }
                 }
@@ -41,24 +50,25 @@
         }
 
         .cuisines {
-            h2 {
-                font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
-            }
-
             .cuisine-list {
                 li {
-                    font-size: clamp(0.5rem, 0.7364rem + 1.7182vw, 1.1rem);
+                    font-size: clamp(1rem, 0.7857rem + 0.4286vw, 1.3rem);
                 }
             }
         }
 
         .read-more {
             padding: 1.5rem 2rem;
+            h2 {
+                font-size: clamp(1.5rem, 0.4286rem + 2.1429vw, 3rem);
+            }
+            p {
+                font-size: clamp(1rem, 0.7857rem + 0.4286vw, 1.3rem);
+            }
+            .read-more-btn {
+                font-size: clamp(1rem, 0.6429rem + 0.7143vw, 1.5rem);
+            }
         }
-    }
-
-    #older-post {
-        grid-column-end: span 2;
     }
 }
 
