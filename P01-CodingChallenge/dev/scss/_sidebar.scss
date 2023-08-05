@@ -10,6 +10,7 @@
 .latest-recipes {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   h2 {
     @include sidebar-h2-style;
@@ -21,10 +22,16 @@
     gap: 7px;
     padding: 10px;
 
+    h3 {
+      font-family: $default-font;
+      font-size: clamp(0.5rem, 0.8364rem + 1.8182vw, 2rem);
+      font-weight: 400;
+    }
+
     img {
       border: 2px solid $darkblue;
       border-right-width: 1px;
-      border-left-width: 1px;
+      border-bottom-width: 1px;
     }
 
     &:nth-child(even) {
@@ -38,6 +45,8 @@
 }
 
 .cuisines {
+  margin-bottom: 10px;
+
   h2 {
     @include sidebar-h2-style;
   }
@@ -50,7 +59,8 @@
     /* Items wrap to next row when needed */
     background-color: $white;
     list-style: none;
-    padding: 0;
+    padding: 11px 3px;
+    line-height: 1.4rem;
     margin: 0;
 
     li {
