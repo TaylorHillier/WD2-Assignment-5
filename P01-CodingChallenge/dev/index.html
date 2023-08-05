@@ -31,23 +31,30 @@
 <body>
 	<!-- Navigation Bar -->
 	<nav class="navbar">
-		<div class="logo">
-			<!-- logo image goes here -->
-			<a href="#">
-				<picture id="logo-image">
-					<source media="(max-width: 600px)" srcset="images/small-logo.jpg" />
-					<source media="(max-width: 1000px)" srcset="images/logo.png" />
-					<img src="images/logo.png" alt="The logo picture of website" />
-				</picture>
-			</a>
-		</div>
-		<!-- Hamburger Menu -->
-		<div class="hamburgerMenu">
-			<img src="images/menu.png" alt="Hamburger Menu Icon" />
-		</div>
+		<section id="displayed-nav-bar">
+			<div class="logo">
+				<!-- logo image goes here -->
+				<a href="#">
+					<picture id="logo-image">
+						<source media="(max-width: 330px)" srcset="images/small-logo.jpg" />
+						<source media="(max-width: 1000px)" srcset="images/logo.png" />
+						<img src="images/logo.png" alt="The logo picture of website" />
+					</picture>
+				</a>
+			</div>
+			<!-- Hamburger Menu -->
+			<div class="hamburgerMenu">
+				<img src="images/menu.png" alt="Hamburger Menu Icon" />
+			</div>
+		</section>
 		<!--navigation links here -->
-		<section id="openBurgerMenu" class="hidden">
+		<section id="openBurgerMenu">
+			<!--search box-->
 			<ul class="nav-links">
+				<div class="search-box" id="search-box">
+					<input type="textbox" id="search-text" name="search-text" placeholder="Search" />
+					<a href="#" id="searchicon"><img src="images/search.png" alt="search icon button" /></a>
+				</div>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Reviews</a></li>
@@ -58,20 +65,18 @@
 			<div class="social-links" id="social-links">
 				<ul class="social-media">
 					<li class="social-icon">
-						<a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+						<a href="#" target="_blank" class="defaultf"><i class="fab fa-facebook"></i></a>
+						<a href="#" target="_blank" class="slideinf"><i class="fab fa-facebook"></i></a>
 					</li>
 					<li class="social-icon">
-						<a href="#" target="_blank"><i class="fab fa-google"></i></a>
+						<a href="#" target="_blank" class="defaultg"><i class="fab fa-google"></i></a>
+						<a href="#" target="_blank" class="slideing"><i class="fab fa-google"></i></a>
 					</li>
 					<li class="social-icon">
-						<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="#" target="_blank" class="defaultt"><i class="fab fa-twitter"></i></a>
+						<a href="#" target="_blank" class="slideint"><i class="fab fa-twitter"></i></a>
 					</li>
 				</ul>
-			</div>
-			<!--search box-->
-			<div class="search-box" id="search-box">
-				<input type="textbox" id="search-text" name="search-text" placeholder="Search" />
-				<a href="#"><img src="images/search.png" alt="search icon button" /></a>
 			</div>
 		</section>
 	</nav>
