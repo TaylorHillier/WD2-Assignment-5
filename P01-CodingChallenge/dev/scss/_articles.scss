@@ -1,5 +1,6 @@
-@use "typography" as *;
-@use "variables" as *;
+@use "./typography" as *;
+@use "./variables" as *;
+
 body {
     background-image: url("../images/bg.jpg");
     font-size: clamp(1rem, 0.8636rem + 0.6818vw, 1.3rem);
@@ -7,6 +8,7 @@ body {
 
 .main-dish {
     position: relative;
+
     h2 {
         position: absolute;
         bottom: 0;
@@ -21,6 +23,7 @@ body {
         font-weight: 400;
         opacity: 0.75;
     }
+
     img {
         width: 100%;
     }
@@ -30,6 +33,7 @@ body {
     background-color: white;
     padding: 0.6rem;
     margin-bottom: 0.5rem;
+
     h2 {
         margin: 0;
         font-family: $default-font;
@@ -37,15 +41,19 @@ body {
         font-size: clamp(1.8rem, 1.3600rem + 2.2000vw, 4rem);
         color: $darkblue;
     }
+
     p {
         font-family: $default-font;
     }
+
     .posted-by {
         margin-top: 0;
     }
+
     img {
         width: 100%;
     }
+
     .read-more-btn {
         background-color: $darkblue;
         padding: 0.4rem;
@@ -60,6 +68,5 @@ body {
 }
 
 #older-post {
-    margin: 2rem 0 ;
+    margin: 2rem 0;
 }
-

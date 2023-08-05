@@ -1,6 +1,6 @@
-$darkblue: #0669a7;
-$lightblue: #4B9cd3;
 $bordercolor: #025e97;
+@use "./typography" as *;
+@use "./variables" as *;
 
 @mixin border {
     border: solid;
@@ -10,6 +10,7 @@ $bordercolor: #025e97;
 
 body {
     margin: 2px;
+    font-family: $default-font;
 }
 
 input[type='textbox'] {

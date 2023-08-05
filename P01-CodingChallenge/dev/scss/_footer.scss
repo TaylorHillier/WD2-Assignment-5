@@ -1,0 +1,11 @@
+@use "./variables" as *;
+
+.site-footer {
+    background-color: $darkblue;
+
+    p {
+        margin: 0;
+        padding: 1rem;
+        color: white;
+    }
+}
