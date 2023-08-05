@@ -10,74 +10,75 @@ body {
 
 .main-content {
     margin: 0 10px;
-    .main-dish-container {
-        margin: 10px 0;
-        .main-dish {
-            position: relative;
-            h2 {
-                position: absolute;
-                bottom: 4px;
-                left: 0;
-                right: 0;
-                color: white;
-                background-color: black;
-                font-family: $default-font;
-                font-size: clamp(1.2rem, 0.8364rem + 1.8182vw, 1.5rem);
-                padding: 0.6rem;
-                font-weight: 400;
-                opacity: 0.75;
-                box-sizing: border-box;
-                margin: 0;
-            }
-            img {
-                width: 100%;
-            }
-        }
-    }
-    .read-more {
-        background-color: white;
-        padding: 0.6rem;
-        margin-bottom: 0.5rem;
-
+    
+}
+.main-dish-container {
+    margin: 10px 0;
+    .main-dish {
+        position: relative;
         h2 {
-            margin: 0;
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            right: 0;
+            color: white;
+            background-color: black;
             font-family: $default-font;
+            font-size: clamp(1.2rem, 0.8364rem + 1.8182vw, 1.5rem);
+            padding: 0.6rem;
             font-weight: 400;
-            font-size: clamp(1.8rem, 1.3600rem + 2.2000vw, 3rem);
-            color: $darkblue;
+            opacity: 0.75;
+            box-sizing: border-box;
+            margin: 0;
         }
-
-        p {
-            font-family: $default-font;
-        }
-
-        .posted-by {
-            margin-top: 0;
-        }
-
         img {
             width: 100%;
         }
+    }
+}
+.read-more {
+    background-color: white;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
 
-        .read-more-btn {
-            background-color: $darkblue;
-            padding: 0.4rem;
-            width: fit-content;
-            font-family: $default-font;
-            font-weight: bold;
-            margin-right: 0;
-            margin-left: auto;
-            font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
-            a {
-                color: white;
-                text-decoration: none;
-            }
-            &:hover {
-                background-color: $lightblue;
-            }
+    h2 {
+        margin: 0;
+        font-family: $default-font;
+        font-weight: 400;
+        font-size: clamp(1.8rem, 1.3600rem + 2.2000vw, 3rem);
+        color: $darkblue;
+    }
+
+    p {
+        font-family: $default-font;
+    }
+
+    .posted-by {
+        margin: 5px 0 30px 0
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .read-more-btn {
+        background-color: $darkblue;
+        padding: 0.4rem;
+        width: fit-content;
+        font-family: $default-font;
+        font-weight: bold;
+        margin-right: 0;
+        margin-left: auto;
+        font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        &:hover {
+            background-color: $lightblue;
         }
     }
-    #older-post {
-        margin: 2rem 0;
-    }
+}
+#older-post {
+    margin: 2rem 0;
 }
