@@ -46,9 +46,6 @@
     .read-more {
       padding: 1.5rem 2rem;
     }
-    .read-more:nth-of-type(2) {
-      grid-row: 3;
-    }
   }
   #older-post {
     grid-column-end: span 2;
