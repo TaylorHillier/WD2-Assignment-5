@@ -5,12 +5,7 @@
 @import './articles';
 @import './typography';
 @import './mediaqueries';
-
-
-
-
-
-@use "mediaqueries";
+@import './nav';
 
 img {
     max-width: 100%;

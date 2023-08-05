@@ -1,5 +1,5 @@
 $bordercolor: #025e97;
-@use "./typography" as *;
+// @use "./typography" as *;
 @use "./variables" as *;
 
 @mixin border {
@@ -10,7 +10,7 @@ $bordercolor: #025e97;
 
 body {
     margin: 2px;
-    font-family: $default-font;
+    // font-family: $default-font;
 }
 
 input[type='textbox'] {
@@ -49,7 +49,6 @@ input[type='textbox'] {
 
 
     #logo-image {
-
         @media (max-width: 31.25em) {
             img {
                 max-width: 70vw;
