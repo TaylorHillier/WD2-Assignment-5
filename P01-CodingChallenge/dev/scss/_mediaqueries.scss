@@ -1,10 +1,112 @@
 @use "./mixins" as *;
 
-@include media("tablet") {
+@include media("desktop") {
+    .main-content {
+        display: grid;
+        grid-template-columns: clamp(530px, 51.4286px + 59.8214vw, 1200px) 250px;
+        justify-content: center;
+        gap: 5px;
+
+        .main-dish-container {
+            gap: 7px;
+            align-self: start;
+        }
+
+        .main-dish {
+            img {
+                height: auto;
+            }
+        }
+
+        .sidebar {
+            grid-row-end: span 3;
+            margin: 7px 0;
+
+            .latest-recipes {
+                h2 {
+                    font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
+                }
+
+                .latest-recipes-items {
+                    img {
+                        height: 100%;
+                    }
+
+                    h3 {
+                        font-size: clamp(0.7rem, 0.8364rem + 0.6818vw, 1.7rem);
+                        margin: 7px;
+                    }
+                }
+            }
+        }
+
+        .cuisines {
+            h2 {
+                font-size: clamp(1.6rem, 0.8636rem + 0.6818vw, 1.5rem);
+            }
+
+            .cuisine-list {
+                li {
+                    font-size: clamp(0.5rem, 0.7364rem + 1.7182vw, 1.1rem);
+                }
+            }
+        }
+
+        .read-more {
+            padding: 1.5rem 2rem;
+        }
+    }
+
+    #older-post {
+        grid-column-end: span 2;
+    }
+}
+
+@include media("tablet-large") {
+    .main-dish-container {
+        display: grid;
+        grid-template-areas:
+            "one one"
+            "two three";
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    .main-dish {
+        margin: 0;
+
+        h2 {
+            bottom: 0;
+        }
+    }
+
+    #main-dish-one {
+        grid-area: one;
+    }
+
+    #main-dish-two {
+        grid-area: two;
+    }
+
+    #main-dish-three {
+        grid-area: three;
+    }
+
+    .read-more {
+        margin-bottom: 15px;
+        padding: 1rem;
+    }
+}
+
+.cuisine-list {
+    @include cuisine-list-style;
+}
+
+@include media("tablet-small") {
     .main-dish {
         img {
             object-fit: cover;
-            height: clamp(240px, 68.3643px + 35.3160vw, 430px);
+            height: clamp(240px, 68.3643px + 35.316vw, 430px);
         }
     }
 
@@ -18,5 +120,9 @@
         .read-more-btn {
             padding: 0.6rem;
         }
+    }
+
+    .cuisine-list {
+        @include cuisine-list-style;
     }
 }
