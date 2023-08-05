@@ -5,8 +5,12 @@
 @import './articles';
 @import './typography';
 @import './mediaqueries';
-@import './nav';
 
-img {
-    max-width: 100%;
+.main-content {
+    max-width: 1268px;
+    margin: auto;
+}
+
+body {
+    margin-top: 0;
 }

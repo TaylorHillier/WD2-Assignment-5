@@ -8,11 +8,6 @@ $bordercolor: #025e97;
     border-color: $bordercolor;
 }
 
-body {
-    margin: 2px;
-    // font-family: $default-font;
-}
-
 input[type='textbox'] {
     background-image: url('../images/search.png');
     background-repeat: no-repeat;
@@ -23,9 +18,15 @@ input[type='textbox'] {
     display: none !important;
 }
 
+
 @media(min-width: 50em) {
     .headerextended {
         box-shadow: 0 0 0 100vmax darkblue;
+        clip-path: inset(0 -100vmax);
+    }
+
+    .headerextendedwhite {
+        box-shadow: 0 0 0 100vmax white;
         clip-path: inset(0 -100vmax);
     }
 }
@@ -33,7 +34,8 @@ input[type='textbox'] {
 .navbar {
     position: relative;
     margin: auto;
-    max-width: 67.5rem;
+    max-width: 92rem;
+    background-color: white;
 
     #displayed-nav-bar {
         padding: 0.5rem;
@@ -49,9 +51,16 @@ input[type='textbox'] {
 
 
     #logo-image {
+
         @media (max-width: 31.25em) {
             img {
                 max-width: 70vw;
+            }
+        }
+
+        @media (min-width: 31.25em) {
+            img {
+                max-width: 50vw;
             }
         }
     }
