@@ -21,7 +21,7 @@ input[type='textbox'] {
 
 @media(min-width: 50em) {
     .headerextended {
-        box-shadow: 0 0 0 100vmax darkblue;
+        box-shadow: 0 0 0 100vmax $navcolor;
         clip-path: inset(0 -100vmax);
     }
 
@@ -143,7 +143,7 @@ input[type='textbox'] {
                 display: grid;
                 justify-content: center;
                 grid-template-columns: 10px 0 1fr 1fr 1fr 1fr 1fr 10px;
-                background-color: darkblue;
+                background-color: $navcolor;
 
 
                 li {
